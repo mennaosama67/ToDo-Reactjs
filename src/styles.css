@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #1a2639;
+}
+.container {
+  height: 100vh;
+}
+
+.app-wrapper {
+  width: 50%;
+  margin: 50px auto;
+  background-color: #3e4a61;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px 0 rgba(27, 27, 27, 0.473);
+}
+.header {
+  padding-top: 10px;
+  text-align: center;
+  color: white;
+}
+.content-wrapper {
+  padding: 30px 60px;
+}
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.task-input {
+  background-color: black;
+  color: #d9dad7;
+  border: 1px solid #9d9e9a;
+  border-radius: 7px;
+  font-size: 20px;
+  padding: 10px 15px;
+}
+.add-btn {
+  color: white;
+  font-size: 20px;
+  border: none;
+  background-color: #c24d2c;
+  padding: 10px 20px;
+  border-radius: 7px;
+}
+.add-btn:hover {
+  background-color: #c7360f;
+}
+.todo-item {
+  margin: 20px 20px;
+  list-style: none;
+  border: 2px solid #9d9e9a;
+  padding: 10px 15px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: space-between;
+}
+.item {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  color: white;
+}
+.icon i {
+  font-size: 18px;
+  padding: 0 5px;
+  cursor: pointer;
+}
+.complete {
+  color: green;
+}
+.edit {
+  color: rgb(223, 223, 53);
+}
+.delete {
+  color: darkred;
+}
+.done {
+  text-decoration: line-through;
+}
+@media (min-width: 300px) and (max-width: 349px) {
+  .app-wrapper {
+    width: 95%;
+  }
+  .content-wrapper {
+    padding: 30px 5px;
+  }
+  .add-btn {
+    margin-top: 10px;
+  }
+}
+@media (min-width: 350px) and (max-width: 720px) {
+  .app-wrapper {
+    width: 90%;
+  }
+  .content-wrapper {
+    padding: 30px 15px;
+  }
+}
+@media (min-width: 721px) and (max-width: 995px) {
+  .app-wrapper {
+    width: 80%;
+  }
+}
